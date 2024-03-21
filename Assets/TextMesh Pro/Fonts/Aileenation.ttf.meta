@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 45a85b15741c12b40a0db1cbfc775cf9
+guid: fec5c971347e72e479f56d2e8883426f
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - SDAsian
+  - Aileenation
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

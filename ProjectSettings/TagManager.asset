@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Sushi
+  - ring
   layers:
   - Default
   - TransparentFX
@@ -11,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - High
+  - 
   - 
   - 
   - 
@@ -38,9 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Effects
+    uniqueID: 3921539347
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Layer1
-    uniqueID: 3777345251
     locked: 0
