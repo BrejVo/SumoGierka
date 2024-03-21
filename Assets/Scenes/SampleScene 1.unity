@@ -242,10 +242,14 @@ GameObject:
   - component: {fileID: 540889237}
   - component: {fileID: 540889242}
   - component: {fileID: 540889243}
+<<<<<<< Updated upstream
   - component: {fileID: 540889244}
   - component: {fileID: 540889246}
   - component: {fileID: 540889245}
   m_Layer: 3
+=======
+  m_Layer: 6
+>>>>>>> Stashed changes
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -402,6 +406,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.12298584, y: -0.16693878}
   m_Size: {x: 0.7635498, y: 1.1920624}
   m_Direction: 0
+<<<<<<< Updated upstream
 --- !u!114 &540889244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,6 +447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.5
+=======
+>>>>>>> Stashed changes
 --- !u!1 &603207635
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,9 +775,12 @@ GameObject:
   - component: {fileID: 1631144236}
   - component: {fileID: 1631144240}
   - component: {fileID: 1631144242}
+<<<<<<< Updated upstream
   - component: {fileID: 1631144245}
   - component: {fileID: 1631144244}
   - component: {fileID: 1631144243}
+=======
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -959,6 +969,7 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+<<<<<<< Updated upstream
 --- !u!114 &1631144243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +1017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1631144236}
+=======
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
