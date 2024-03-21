@@ -243,7 +243,9 @@ GameObject:
   - component: {fileID: 540889242}
   - component: {fileID: 540889243}
   - component: {fileID: 540889244}
-  m_Layer: 6
+  - component: {fileID: 540889246}
+  - component: {fileID: 540889245}
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -407,13 +409,39 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 540889235}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60a53f7c9df9bdb41bea7480c2a493a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1631144239}
   speed: 1.5
+--- !u!114 &540889245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540889235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53bbd811c6606e4ab2b3e04285602c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerAwarnessDistance: 5
+--- !u!114 &540889246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540889235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92304f386a32e04fbe294fe55cc48fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 0.5
 --- !u!1 &603207635
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,9 +768,9 @@ GameObject:
   - component: {fileID: 1631144236}
   - component: {fileID: 1631144240}
   - component: {fileID: 1631144242}
-  - component: {fileID: 1631144243}
-  - component: {fileID: 1631144244}
   - component: {fileID: 1631144245}
+  - component: {fileID: 1631144244}
+  - component: {fileID: 1631144243}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -940,14 +968,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1631144234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01e87d147c74ac34cbbfef0396c9a70b, type: 3}
+  m_Script: {fileID: 11500000, guid: 4df8fd230d3302c449c5b1f131152dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  mass: 100
-  drag: 10
-  money: 0
-  rb: {fileID: 1631144236}
+  pushForce: 10
+  maxDistance: 2
+  pushableLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &1631144244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,9 +985,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1631144234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d4849c35e5d96549a68a71dd4d40768, type: 3}
+  m_Script: {fileID: 11500000, guid: 01e87d147c74ac34cbbfef0396c9a70b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  mass: 100
+  drag: 100
+  money: 0
   rb: {fileID: 1631144236}
 --- !u!114 &1631144245
 MonoBehaviour:
@@ -970,14 +1002,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1631144234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4df8fd230d3302c449c5b1f131152dc7, type: 3}
+  m_Script: {fileID: 11500000, guid: c81ed531a7b45ea4ba9f9f2579be9490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 20
-  maxDistance: 0.7
-  pushableLayer:
-    serializedVersion: 2
-    m_Bits: 64
+  rb: {fileID: 1631144236}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

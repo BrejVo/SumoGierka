@@ -6,11 +6,13 @@ TagManager:
   tags:
   - Sushi
   - ring
+  - Enemy
+  - Sumo_mata
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - 
